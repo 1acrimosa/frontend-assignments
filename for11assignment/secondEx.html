@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Rendering with Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+
+<div id="app">
+    <ul>
+        <li v-for="item in items" :key="item.id">
+            {{ item.name }}
+            <button @click="removeItem(item.id)">Remove</button>
+        </li>
+    </ul>
+
+    <button @click="addItem">Add Item</button>
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            items: [
+                { id: 1, name: 'Apple' },
+                { id: 2, name: 'Banana' },
+                { id: 3, name: 'Orange' }
+            ],
+            newItemId: 4
+        },
+        methods: {
+            addItem: function() {
+                this.items.push({ id: this.newItemId, name: 'New Item' });
+                this.newItemId++;
+            },
+            removeItem: function(itemId) {
+                this.items = this.items.filter(item => item.id !== itemId);
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

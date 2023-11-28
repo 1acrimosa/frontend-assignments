@@ -1,0 +1,55 @@
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: lightgreen;
+    color: darkslategrey;
+}
+
+header {
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+h2, p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 27%;
+}
+
+label, button {
+    margin-left: 3%;
+}
+
+li {
+    margin-left: 30%;
+    list-style: none;
+}

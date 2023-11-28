@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling and Validation</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+
+<div id="app">
+    <form @submit.prevent="submitForm">
+        <div>
+            <label for="username">Username:</label>
+            <input v-model="username" type="text" id="username">
+            <span v-if="!isUsernameValid">Username cannot be empty.</span>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input v-model="email" type="email" id="email">
+            <span v-if="!isEmailValid">Enter a valid email address.</span>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input v-model="password" type="password" id="password">
+            <span v-if="!isPasswordValid">Password must be at least 6 characters.</span>
+        </div>
+
+        <button :disabled="!isFormValid" type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            username: '',
+            email: '',
+            password: '',
+            isUsernameValid: true,
+            isEmailValid: true,
+            isPasswordValid: true,
+        },
+        computed: {
+            isFormValid: function() {
+                return this.isUsernameValid && this.isEmailValid && this.isPasswordValid;
+            }
+        },
+        methods: {
+            submitForm: function() {
+                alert('Form submitted!');
+            },
+        },
+        watch: {
+            username: function() {
+                this.isUsernameValid = this.username.trim() !== '';
+            },
+            email: function() {
+                this.isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.email);
+            },
+            password: function() {
+                this.isPasswordValid = this.password.length >= 6;
+            },
+        },
+    });
+</script>
+
+</body>
+</html>

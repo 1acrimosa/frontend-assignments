@@ -1,0 +1,68 @@
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: lightskyblue;
+    color: darkblue;
+}
+
+header {
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+.profile {
+    margin-left: 30%;
+    margin-bottom: 10%;
+    color: black;
+    display: flex;
+}
+
+.profile img {
+    margin-bottom: 3%;
+}
+
+.profile p {
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.info {
+    margin-left: 5%;
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 2%;
+    margin-top: 3%;
+    margin-left: 40%;
+    color: black;
+}
+
+form {
+    margin-left: 40%;
+    margin-bottom: 10%;
+}
+
+form label {
+    display: flex;
+    margin-top: 2%;
+}
