@@ -1,0 +1,964 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #38524f;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__moon {
+    border: 1px solid #38524f;
+    /*width: fit-content;*/
+    border-radius: 20px;
+    padding-right: 30px;
+}
+
+.header__moon svg {
+    position: relative;
+    left: 24px;
+    top: 3px;
+}
+
+.wrapper {
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background-color: #ebeae4;
+
+    /*bg url*/
+
+    /*background: url("media/F1xHJkbaAAAmkrM.jpg");*/
+    background-size: cover;
+}
+
+/*.intro__inner {*/
+/*    width: 100%;*/
+/*    max-width: 880px;*/
+/*    margin: 0 auto;*/
+
+/*    text-align: center;*/
+/*}*/
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #ebeae4;
+}
+
+.header__inner {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #38524f;
+}
+
+.header__logo:hover {
+    color: #008a7a;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav a{
+    font-size: 16px;
+    font-weight: 500;
+    /*color: #008a7a;*/
+    color: #38524f;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.nav a:hover {
+    color: #008a7a;
+}
+
+/*.nav__link {*/
+/*    display: inline-block;*/
+/*    vertical-align: top;*/
+/*    margin: 0 15px;*/
+/*    position: relative;*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*    transition: color .35s linear;*/
+/*}*/
+
+/*.nav__link:hover {*/
+/*    color: black;*/
+/*}*/
+
+.content {
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.picture {
+    width: 49%;
+}
+.picture img {
+    width: 100%;
+    border-radius: 2%;
+}
+.picture_info {
+    width: 49%;
+}
+
+.picture_info_content {
+    width: 500px;
+}
+
+.picture_info_name {
+    margin-bottom: 10%;
+    color: rgb(128, 128, 128);
+}
+
+.picture_info_title, .picture_info_icons {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 3%;
+}
+
+.picture_info_profile {
+    display: flex;
+}
+
+.picture_info_profile img {
+    border-radius: 24px;
+    margin-top: 2%;
+}
+
+.profile_name {
+    margin-top: 1.5%;
+    margin-left: 3%;
+}
+
+.data {
+    font-size: 12px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 30px;
+}
+
+.arrow p {
+    font-weight: bold;
+}
+
+.recommendation p {
+    font-family: Arial, serif;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+.recommend_food {
+    width: 12%;
+    height: 8%;
+    display: flex;
+}
+
+.recommend_food img {
+    width: 120%;
+    border-radius: 2%;
+}
+
+.food_picture {
+    display: flex;
+    margin-right: 10%;
+}
+
+.recommend_food p {
+    font-weight: lighter;
+    color: rgb(128, 128, 128);
+    margin-right: 100%;
+}
+
+.recommend_food_text1 {
+    margin-right: 100%;
+}
+
+.food_bigger_text {
+    font-size: 24px;
+    font-family: Arial, serif;
+    font-weight: bold;
+    color: black;
+}
+
+.recipes_h1 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+
+.recipe_food_image {
+    display: flex;
+    align-content: space-between;
+    width: 32%;
+}
+
+.recipe_food_image img {
+    width: 100%;
+    margin-right: 10%;
+    border-radius: 2%;
+}
+
+.recipe_food {
+    display: flex;
+}
+
+.recipe_food_profile {
+    margin-right: auto;
+}
+
+.book {
+    display: flex;
+    margin-top: 7%;
+    background-color: #dedede;
+}
+
+.book_text p {
+    width: 600px;
+}
+
+.loadmore {
+    display: flex;
+    align-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 24px;
+    margin-left: 40%;
+    border: 1px solid #38524f;
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-right: 10px;
+}
+
+.email {
+    background-image: url(https://i0.wp.com/demo.wpzoom.com/cookbook/files/2022/04/brooke-lark-F_5g8EEHYE-unsplash-1-scaled.jpg?fit=1721%2C2560&ssl=1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.email p {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.email_sign_up {
+    display: flex;
+}
+
+.email_button {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-right: 10%;
+}
+
+.categories p{
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 5%;
+}
+
+.video_text p{
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+}
+
+.shop h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.shop_text {
+    display: flex;
+    font-family: Arial, serif;
+    color: black;
+}
+
+.shop_price {
+    margin-right: 28%;
+}
+
+.shop_price h1{
+    width: 1000%;
+}
+
+.view_all_items {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 24px;
+    font-family: Arial, serif;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding-left: 40%;
+}
+
+.party_image {
+    display: flex;
+    align-content: space-between;
+    width: 46%;
+}
+
+.party_image img {
+    width: 100%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.recipe_food_image img {
+    width: 100%;
+    margin-right: 10%;
+    border-radius: 2%;
+}
+
+.party_text {
+    display: flex;
+}
+
+.party_text-detail {
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.instagram img {
+    width: 80%;
+    padding-left: 10%;
+}
+
+.footer_info {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_info_text p {
+    width: 240px;
+}
+
+.footer_social {
+    display: flex;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.footer_social h1 {
+    display: flex;
+    margin-right: 20%;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+
+.footer_social p {
+    display: flex;
+    align-content: space-between;
+    margin-right: 5%;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+
+.footer_social_icon {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16%;
+}
+
+.footer_end {
+    display: flex;
+    align-content: space-between;
+    font-family: Arial, serif;
+    font-size: 16px;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.footer_end p {
+    display: flex;
+    align-content: space-between;
+    margin-right: 30%;
+}
+
+.contact_page_info {
+    /*background-color: #FFFFFF;*/
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.contact_page_info_text {
+    margin-top: 5%;
+    /* Font & Text */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(85, 85, 85);
+    text-align: start;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(85, 85, 85);
+
+    /* Box */
+    height: 680.469px;
+    width: 496.844px;
+    border: 0px none rgb(85, 85, 85);
+    border-top: 0px none rgb(85, 85, 85);
+    border-right: 0px none rgb(85, 85, 85);
+    border-bottom: 0px none rgb(85, 85, 85);
+    border-left: 0px none rgb(85, 85, 85);
+    padding: 10px;
+}
+
+.contact_h2 {
+    margin-top: 5%;
+    /* Font & Text */
+    font-family: poppins, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 47px;
+    text-decoration: none solid rgb(56, 82, 79);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(56, 82, 79);
+
+    /* Box */
+    height: 94px;
+    width: 476.844px;
+    border: 0px none rgb(56, 82, 79);
+    border-top: 0px none rgb(56, 82, 79);
+    border-right: 0px none rgb(56, 82, 79);
+    border-bottom: 0px none rgb(56, 82, 79);
+    border-left: 0px none rgb(56, 82, 79);
+    padding: 0px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+
+}
+
+.contact_p {
+    margin-top: 15%;
+    /* Font & Text */
+    font-family: poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 31px;
+    text-decoration: none solid rgb(85, 85, 85);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(85, 85, 85);
+
+    /* Box */
+    height: 155px;
+    width: 476.844px;
+}
+
+.contact_number {
+    margin-top: 15%;
+    /* Font & Text */
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-decoration: none solid rgb(85, 85, 85);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(85, 85, 85);
+
+    /* Box */
+    height: 72px;
+    width: 476.844px;
+}
+
+.contact_page_info_email {
+    /* Font & Text */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(85, 85, 85);
+    text-align: start;
+    vertical-align: baseline;
+    white-space: normal;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(85, 85, 85);
+
+    /* Box */
+    height: 680.469px;
+    width: 703.148px;
+    padding: 10px;
+}
+
+.contact_page_info_email_name, .contact_page_info_emailtextarea,
+.contact_page_info_email_website_url {
+    /* Font & Text */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(85, 85, 85);
+    text-align: start;
+    vertical-align: baseline;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(85, 85, 85);
+
+    /* Box */
+    height: 101.094px;
+    width: 683.148px;
+    padding: 10px 0px;
+}
+
+.contact_page_titles {
+        /* Font & Text */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(85, 85, 85);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(85, 85, 85);
+
+    /* Box */
+    height: 101.094px;
+    width: 683.148px;
+}
+
+.contact_page_inputs {
+    /* Font & Text */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: normal;
+    text-decoration: none solid rgb(85, 85, 85);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(85, 85, 85);
+
+    /* Box */
+    height: 45.5px;
+    width: 409.883px;
+    border: 1px solid rgb(226, 226, 226);
+    border-top: 1px solid rgb(226, 226, 226);
+    border-right: 1px solid rgb(226, 226, 226);
+    border-bottom: 1px solid rgb(226, 226, 226);
+    border-left: 1px solid rgb(226, 226, 226);
+    margin: 0px;
+    padding: 12px;
+    max-height: none;
+    min-height: 0px;
+    max-width: 60%;
+    min-width: 0px;
+
+
+    /* Table */
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    caption-side: top;
+    empty-cells: show;
+    table-layout: auto;
+
+    /* Effects */
+    transform: none;
+    transition: all 0.2s ease 0s;
+    outline: rgb(85, 85, 85) dashed 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.contact_page_textarea {
+    /* Font & Text */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(85, 85, 85);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: pre-wrap;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(85, 85, 85);
+
+    /* Box */
+    height: 220px;
+    width: 683.148px;
+    border: 1px solid rgb(226, 226, 226);
+    border-top: 1px solid rgb(226, 226, 226);
+    border-right: 1px solid rgb(226, 226, 226);
+    border-bottom: 1px solid rgb(226, 226, 226);
+    border-left: 1px solid rgb(226, 226, 226);
+    margin: 0px;
+    padding: 12px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+    min-width: 0px;
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.shop_page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    /* Font & Text */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(85, 85, 85);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(85, 85, 85);
+
+    /* Box */
+    height: 1115.14px;
+    /*width: 1200px;*/
+    border: 0px none rgb(85, 85, 85);
+    border-top: 0px none rgb(85, 85, 85);
+    border-right: 0px none rgb(85, 85, 85);
+    border-bottom: 0px none rgb(85, 85, 85);
+    border-left: 0px none rgb(85, 85, 85);
+    padding: 40px 0px;
+}
+
+.shop_page_title h1 {
+    /* Font & Text */
+    font-family: Poppins, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 39.6px;
+    text-decoration: none solid rgb(17, 17, 17);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(17, 17, 17);
+
+    /* Box */
+    height: 39.5938px;
+    width: 1200px;
+    border: 0px none rgb(17, 17, 17);
+    border-top: 0px none rgb(17, 17, 17);
+    border-right: 0px none rgb(17, 17, 17);
+    border-bottom: 0px none rgb(17, 17, 17);
+    border-left: 0px none rgb(17, 17, 17);
+    margin: 0px 0px 10px;
+}
+
+.shop_page_info {
+    display: flex;
+    align-content: space-between;
+
+    margin-bottom: 5%;
+}
+
+.invisible_p {
+    color: #ebeae4;
+}
+
+.shop_page_items {
+    display: inline-grid;
+}
+
+.shop_page_items_first_row, .shop_page_items_second_row {
+    display: flex;
+}
+
+.shop_page_items_info {
+    /* Font & Text */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(85, 85, 85);
+    text-align: center;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(85, 85, 85);
+
+    /* Box */
+    height: 396.977px;
+    width: 264.594px;
+    border: 0px none rgb(85, 85, 85);
+    border-top: 0px none rgb(85, 85, 85);
+    border-right: 0px none rgb(85, 85, 85);
+    /*border-bottom: 0px none rgb(885);*/
+    border-left: 0px none rgb(85, 85, 85);
+    margin: 0px 45.5938px 47.872px 0px;
+    padding: 0px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+    min-width: 0px;
+}
+
+.shop_page_items_info img {
+    /* Font & Text */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(17, 17, 17);
+    text-align: center;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: top;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(17, 17, 17);
+
+    /* Box */
+    height: 264.594px;
+    width: 264.594px;
+    border: 0px none rgb(17, 17, 17);
+    border-top: 0px none rgb(17, 17, 17);
+    border-right: 0px none rgb(17, 17, 17);
+    border-bottom: 0px none rgb(17, 17, 17);
+    border-left: 0px none rgb(17, 17, 17);
+    margin: 0px 0px 16px;
+    padding: 0px;
+    max-height: none;
+    min-height: 0px;
+    max-width: 100%;
+}

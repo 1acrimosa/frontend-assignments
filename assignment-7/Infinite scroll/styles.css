@@ -1,0 +1,17 @@
+body {
+    font-family: Poppins, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    margin-right: 50px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+    height: 400px;
+    width: 400px;
+}

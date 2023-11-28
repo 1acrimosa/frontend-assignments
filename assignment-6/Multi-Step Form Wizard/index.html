@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Multi-Step Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<div class="form-wizard">
+    <form id="form" class="form" onsubmit="return false;">
+        <div class="step" data-step="1">
+            <div class="design">
+                <h2>Name & E-mail</h2>
+                <div class="inputs_design">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+        </div>
+        <div class="step" data-step="2">
+            <h2>Phone Number</h2>
+            <input type="tel" name="phone" placeholder="Phone" required>
+        </div>
+        <div class="step" data-step="3">
+            <h2>Address</h2>
+            <input type="text" name="address" placeholder="Address" required>
+        </div>
+        <div class="step" data-step="4">
+            <div class="success-message">
+                <h2>Registration Successful!</h2>
+                <p>Thank you for registering.</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="prev-button" onclick="prevStep()">Previous</button>
+            <button class="next-button" onclick="nextStep()">Next</button>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

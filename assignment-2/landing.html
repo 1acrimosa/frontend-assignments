@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--  HEADER  -->
+    <header class="grid md:grid-cols-2 lg:h-[40rem] md:mb-44">
+      <!--  Left/Top Section  -->
+        <section class="lft mx-6 md:mx-24">
+
+          <nav class="flex md:container items-center font-Inter py-4 mt-4">
+              <div class="pr-10">
+                  <img src="Assets/Logo.svg" alt="">
+              </div>
+
+              <div class="flex sm:hidden flex-1 justify-end">
+                  <div class="md:hidden flex items-center">
+                      <button class="outline-none mobile-menu-button">
+                          <img src="Assets/Hamburger%20Menu.svg" alt="">
+                      </button>
+                  </div>
+              </div>
+          </nav>
+
+          <div class="mt-10 md:mt-40">
+              <h1 class="text-time-purple font-bold text-4xl md:text-6xl text-[#1D1B67]">Post when your audience is most active</h1>
+              <p class="py-4 text-lg md:text-xl text-gray-600">
+                  With TimeNow, automatically schedule your posts on Twitter, Linkedin, and Instagram to post when your followers are most active.
+              </p>
+          </div>
+
+          <div class="btns my-4 flex space-x-7 ">
+              <button class="button btn bg-[#2926A7] py-3 text-white rounded" >Start Scheduling</button>
+              <button class="px-7 md:mx-10 md:px-6 rounded-md font-bold text-gray-600 button shadow-xl items-center hover:bg-time-purple hover:text-white ">View Demo</button>
+          </div>
+
+          <div class="my-6 flex">
+              <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 0C5.629 2.866 3.516 3 0 3V14.535C0 19.138 3.203 20.339 9 24C14.797 20.339 18 19.138 18 14.535V3C14.484 3 12.371 2.866 9 0ZM8.452 15L5 11.638L6.237 10.399L8.452 12.522L12.834 8.047L14.072 9.285L8.452 15Z" fill="#049372"></path>
+              </svg>
+              <div class="px-2 text-gray-600 text-lg flex flex-col md:flex-row">TimeNow does not sell your data.
+                <div class="font-bold hover:underline hover:cursor-pointer">Learn More</div>
+              </div>
+          </div>
+
+        </section>
+      <!-- Right/Top Section -->
+        <section class="rght bg-cyan-400">
+            <div class="mx-20 my-6 flex justify-end">
+                <button type="button" class=" btn hidden md:block bg-[#2926A7] py-3 text-white rounded">Start Scheduling</button>
+            </div>
+            <div class="flex justify-center py-10">
+                <img src="Assets/Mockup.png" alt="">
+            </div>
+        </section>
+    </header>
+    <!--  CONTENT #1  -->
+    <section class="gap-10 grid md:grid-cols-2 my-10 mx-6 md:mx-24 py-10">
+        <div class="font-bold text-time-purple text-4xl">
+            TimeNow is used by the most influential people
+            <div class="flex py-4">
+                <img class="h-16 pt-2 mx-1" src="Assets/UA1.png" alt="">
+                <img class="h-16 pt-2 mx-1" src="Assets/UA2.png" alt="">
+                <img class="h-16 pt-2 mx-1" src="Assets/UA3.png" alt="">
+                <img class="h-16 pt-2 mx-1" src="Assets/UA4.png" alt="">
+                <img class="h-16 pt-2 mx-1" src="Assets/UA5.png" alt="">
+                <img class="h-16 pt-2 mx-1" src="Assets/UA6.png" alt="">
+                <img class="h-16 pt-2 mx-1" src="Assets/UA7.png" alt="">
+                <img class="h-16 pt-2 mx-1" src="Assets/UA8.png" alt="">
+            </div>
+        </div>
+        <div class="py-4">
+            <p class="text-gray-600 text-lg">
+                The most influential people on Facebook, Twitter, and Instagram are using TweetNow to schedule posts when their followers are most active. They generally receive 23% more engagement than people who do not.
+            </p>
+        </div>
+    </section>
+    <!--  CONTENT #2  -->
+    <section class="grid lg:grid-cols-2 bg-cyan-200 wrap md:px-24">
+        <div class="mx-6 mt-4">
+            <div class="py-4 text-blue-800 font-bold"> Unified Dashboard </div>
+            <div class="text-emerald-800 font-bold text-5xl">Customizable Dashboard for all platforms</div>
+            <p class="py-4 text-lg text-gray-500">Use Twitter and Instagram but not LinkedIn? You can customize your dashboard to your liking. You can even schedule the same post to individual platforms instead of all platforms.</p>
+            <div class="pb-4">
+                <button class="btn bg-[#2926A7] py-3 text-white rounded">Start Sheduling</button>
+            </div>
+        </div>
+
+        <div class="mx-6 mt-4">
+            <div class="py-4 text-blue-800 font-bold">Enhanced Analytics</div>
+            <div class="text-emerald-800 font-bold text-5xl">Real Time data that tells you everything</div>
+            <p class="py-4 text-lg text-gray-500">Get detailed reports of what's working and what isn't. Engagement rates, impressions, views, and much more data is available to you through our in-depth dashboard tool.</p>
+            <div class="pt-4 lg:pt-10 pb-10">
+                <div class="font-bold text-gray-600 hover:cursor-pointer hover:underline">View Live Demo -></div>
+            </div>
+        </div>
+    </section>
+    <!--  FOOTER  -->
+    <footer class="grid md:grid-cols-2 mx-6 my-10">
+        <div class="grid grid-cols-2 md:grid-cols-3">
+            <div class="grid-rows-3 grid-flow-row py-10">
+                <div class="my-2 font-bold text-base">Product</div>
+                <ul class="space-y-2 text-gray-600">
+                    <li>Homepage</li>
+                    <li>Pricing</li>
+                    <li>Features</li>
+                </ul>
+            </div>
+            <div class="grid-rows-3 grid-flow-row py-10">
+                <div class="my-2 font-bold text-base">Help</div>
+                <ul class="space-y-2 text-gray-600">
+                    <li>Live Chat</li>
+                    <li>Send Email</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="grid-rows-3 py-10">
+                <div class="my-2 font-bold text-base ">Product</div>
+                <ul class="space-y-2 text-gray-600">
+                    <li>About</li>
+                    <li>Customers</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class=" my-2 font-bold text-base">Try TweetNow</div>
+            <div class="py-2 border-2 rounded-sm flex">
+                <input type="text" placeholder="Email Address" class="px-3 py-3">
+                <div class="pb-10">
+                    <button class="absolute right-8 b-2 button btn bg-[#2926A7] py-3 text-white rounded">Start Sheduling</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

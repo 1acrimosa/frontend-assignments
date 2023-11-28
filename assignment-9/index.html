@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Real-Time Chat</title>
+</head>
+<body>
+  <div id="chat-container">
+    <div id="messages"></div>
+      <input type="text" id="message-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <div id="username-container">
+    <input type="text" id="username-input" placeholder="Enter your username...">
+    <button onclick="setUsername()">Set Username</button>
+  </div>
+
+  <!-- Update the input tag in index.html -->
+  <input type="file" id="file-input" accept="image/*">
+  <button onclick="sendImage()">Send Image</button>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* Style the quiz container */
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Style the quiz title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the question */
+#question {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Style the options */
+#options {
+    text-align: left;
+}
+
+/* Style the label for radio buttons */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style the "Submit" button */
+#submit {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+/* Style the feedback message */
+#feedback {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Style correct answers */
+label input[value="optionA"]:checked + span::before,
+label input[value="optionB"]:checked + span::before,
+label input[value="optionC"]:checked + span::before {
+    content: '\2713'; /* Checkmark symbol */
+    color: green;
+    margin-right: 5px;
+}
+
+/* Style incorrect answers */
+label input:checked + span::before {
+    content: '\2717'; /* Cross symbol */
+    color: red;
+    margin-right: 5px;
+}
+

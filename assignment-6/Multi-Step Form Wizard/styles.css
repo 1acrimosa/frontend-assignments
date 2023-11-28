@@ -1,0 +1,42 @@
+body {
+    background-color: #00beef;
+}
+
+.form-wizard {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.step {
+    background-color: powderblue;
+    display: none;
+    padding: 10% 15% 15%;
+    border: #0a0a23;
+    border-radius: 5%;
+}
+
+.design {
+    display: flex;
+}
+
+.inputs_design input {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.buttons {
+    margin-top: 20px;
+    align-content: space-between;
+}
+
+.buttons button {
+    align-content: space-between;
+}
+
+.success-message {
+    display: none;
+}
+
+

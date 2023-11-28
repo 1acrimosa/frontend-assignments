@@ -1,0 +1,27 @@
+#tooltip {
+    position: absolute;
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/*.title button  {*/
+/*    border-color: black;*/
+/*}*/
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+th {
+    background-color: lightgray;
+}

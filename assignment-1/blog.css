@@ -1,0 +1,731 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    background-color: #b5af96;
+    background-image: url("https://authordylanhearn.wordpress.com/wp-content/themes/pub/zoren/images/body.png?m=1375425529i");
+    background-position: left top;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    font-family: 'Open sans',sans-serif;
+}
+
+.page {
+    display: grid;
+}
+
+/*                          HEADER                  */
+
+header {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+.h1_a {
+    /* Font & Text */
+    font-family: "Open sans", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    letter-spacing: normal;
+    line-height: 43.2px;
+    text-decoration: none solid rgb(65, 64, 72);
+    text-align: center;
+    text-indent: 0px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(65, 64, 72);
+
+    /* Box */
+    height: auto;
+    width: auto;
+    border: 0px none rgb(65, 64, 72);
+    border-top: 0px none rgb(65, 64, 72);
+    border-right: 0px none rgb(65, 64, 72);
+    border-bottom: 0px none rgb(65, 64, 72);
+    border-left: 0px none rgb(65, 64, 72);
+    margin: 0px;
+    padding: 0px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+    min-width: 0px;
+
+    /* Positioning */
+    position: static;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    float: none;
+    display: inline;
+    clear: none;
+    z-index: auto;
+
+    /* List */
+    list-style-image: none;
+    list-style-type: disc;
+    list-style-position: outside;
+
+    /* Table */
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    caption-side: top;
+    empty-cells: show;
+    table-layout: auto;
+
+    /* Miscellaneous */
+    overflow: visible;
+    cursor: pointer;
+    visibility: visible;
+}
+
+h2 {
+    /* Font & Text */
+    font-family: "Open sans", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-decoration: none solid rgb(65, 64, 72);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+    color: #414048;
+    height: 26px;
+    width: 700px;
+    margin: 5px 0 0 0;
+}
+
+.page-header {
+    /* Font & Text */
+    font-family: "Open sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24.5px;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(102, 102, 102);
+
+    /* Box */
+    height: 117.391px;
+    width: 1180px;
+    border-top: 0px none rgb(102, 102, 102);
+    border-right: 0px none rgb(102, 102, 102);
+    border-bottom: 10px solid rgb(208, 208, 208);
+    border-left: 0px none rgb(102, 102, 102);
+    padding: 0px 0px 20px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+    min-width: 0px;
+
+    /* Positioning */
+    margin: 40px 0 20px 0;
+    float: left;
+    display: flex;
+
+    align-content: flex-start;
+
+    /* Table */
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    caption-side: top;
+    empty-cells: show;
+    table-layout: auto;
+
+    /* Miscellaneous */
+    overflow: visible;
+    cursor: auto;
+    visibility: visible;
+
+}
+
+.page-header-branding {
+    width: 280px;
+}
+
+.h1_h1 {
+    width: 280px;
+    height: 87px;
+}
+
+a {
+    color: #444444;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none solid rgb(68, 68, 68);
+}
+
+.page_header_links {
+    width: 880px;
+}
+
+.page_header_links a {
+    display: flex;
+    margin-right: 5%;
+    padding: 10px 10px 10px 10px;
+    width: max-content;
+    height: 25px;
+    font-weight: 500;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.page_header_links ul {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+}
+
+/*                          HEADER                  */
+
+
+
+/*                          MAIN                    */
+
+.main-page {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+
+    margin-bottom: 320%;
+}
+
+.content_area {
+    width: 880px;
+    height: 542px;
+    background-color: #FFFFFF;
+    margin-right: 20px;
+    margin-bottom: 5%;
+}
+
+.content_area_second {
+    width: 880px;
+    height: 1780px;
+    background-color: #FFFFFF;
+    margin-right: 20px;
+    margin-bottom: 5%;
+}
+
+.widget_area {
+    width: 280px;
+    height: 406px;
+    background-color: #FFFFFF;
+}
+
+.widget_area_first {
+    margin-bottom: 10%;
+    background-color: #FFFFFF;
+}
+
+.widget_area_first_text {
+    background-color: #d0d0d0;
+}
+
+.widget_area_first_text h1 {
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 300;
+    margin: 0;
+    color: #222;
+    background: #d0d0d0;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.content_area_first_intro {}
+
+.content_area_first_text {
+    /* Font & Text */
+    font-family: Bitter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    background-attachment: scroll;
+    background-color: #FFFFFF;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(102, 102, 102);
+
+    /* Box */
+    height: 245px;
+    width: 800px;
+    border: 0px none rgb(102, 102, 102);
+    border-top: 0px none rgb(102, 102, 102);
+    border-right: 0px none rgb(102, 102, 102);
+    border-bottom: 0px none rgb(102, 102, 102);
+    border-left: 0px none rgb(102, 102, 102);
+    margin: 21px 0px 0px;
+    padding: 0px 40px 20px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+    min-width: 0px;
+
+    /* Positioning */
+    position: static;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    float: none;
+    display: block;
+    clear: none;
+    z-index: auto;
+
+    /* Table */
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    caption-side: top;
+    empty-cells: show;
+    table-layout: auto;
+}
+
+.shield {
+    height: 582px;
+    width: 399px;
+
+    margin: 21px 201px 21px 201px;
+}
+
+.screenshot {
+    height: 389px;
+    width: 800px;
+}
+
+.content_area_first_text p {
+    /* Font & Text */
+    font-family: Bitter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(102, 102, 102);
+
+    /* Box */
+    height: 224px;
+    width: 800px;
+    border: 0px none rgb(102, 102, 102);
+    border-top: 0px none rgb(102, 102, 102);
+    border-right: 0px none rgb(102, 102, 102);
+    border-bottom: 0px none rgb(102, 102, 102);
+    border-left: 0px none rgb(102, 102, 102);
+    margin: 0px 0px 21px;
+    padding: 0px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+    min-width: 0px;
+
+    /* Positioning */
+    position: static;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    float: none;
+    display: block;
+    clear: none;
+    z-index: auto;
+}
+
+.content_area_first_intro_icon {
+    background-color: #f7f7f7;
+    /*background-position: 0% 0%;*/
+    color: #666666;
+
+    height: 69px;
+    width: 800px;
+    padding: 40px 40px 20px 40px;
+
+    display: flex;
+}
+
+.svg_text {
+    background-color: #4D4D4F;
+    border-radius: 50%;
+    color: #FFFFFF;
+
+    height: 48px;
+    width: 48px;
+    margin: 0 40px 20px 0;
+}
+
+.content_area_icon_by, .content_area_icon_on,
+.content_area_icon_under, .content_area_icon_comment {
+    background-color: #f7f7f7;
+    background-position: 0% 0%;
+    color: #666666;
+
+    display: inline-block;
+    align-content: flex-start;
+
+    font-family: "Open sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24.5px;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+
+    /* Box */
+    height: 49px;
+    width: 128px;
+    border: 0px none rgb(102, 102, 102);
+    border-top: 0px none rgb(102, 102, 102);
+    border-right: 0px none rgb(102, 102, 102);
+    border-bottom: 0px none rgb(102, 102, 102);
+    border-left: 0px none rgb(102, 102, 102);
+    margin: 0px 20px 20px 0px;
+    padding: 0px 0px 0px 30px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+    min-width: 0px;
+}
+
+.content_area_first_intro_icon p {
+    font-size: 14px;
+
+    width: 149px;
+    height: 25px;
+}
+
+.content_area_first_intro_icon a {
+    font-size: 10px;
+    color: #49660B;
+
+    width: auto;
+    height: auto;
+}
+
+.content_area_first_intro_hash {
+    background-color: #FFFFFF;
+    background-position: 0% 0%;
+    color: #111111;
+
+    height: 77px;
+    width: 800px;
+    margin: 0 0 10px 0;
+    padding: 40px 40px 10px 40px;
+}
+
+.content_area_first_intro_hash a {
+    /* Font & Text */
+    font-family: "Open sans", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 38.4px;
+    text-decoration: none solid rgb(17, 17, 17);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+    font-weight: lighter;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(17, 17, 17);
+}
+
+
+/*                          MAIN                    */
+
+
+
+/*                          FOOTER                  */
+
+footer {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+.page_footer {
+    /* Font & Text */
+    font-family: "Open sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24.5px;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(102, 102, 102);
+
+    /* Box */
+    height: 117.391px;
+    width: 1180px;
+    border-bottom: 0px none rgb(102, 102, 102);
+    border-right: 0px none rgb(102, 102, 102);
+    border-top: 10px solid rgb(208, 208, 208);
+    border-left: 0px none rgb(102, 102, 102);
+    padding: 0px 0px 20px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+    min-width: 0px;
+
+    /* Positioning */
+    margin: 40px 0 20px 0;
+    margin-top: 1000px;
+    float: left;
+    display: flex;
+
+    align-content: flex-start;
+
+    /* Table */
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    caption-side: top;
+    empty-cells: show;
+    table-layout: auto;
+
+}
+
+.page_footer_links {
+    width: 880px;
+}
+
+.page_footer_links a {
+    display: flex;
+    margin-right: 5%;
+    padding: 10px 10px 10px 10px;
+    width: max-content;
+    height: 16px;
+    font-size: 13px;
+
+    position: relative;
+
+    color: #49660B;
+}
+
+.page_footer_links ul {
+    display: flex;
+    align-content: center;
+    list-style: none;
+    margin-left: 30%;
+}
+
+/*                          FOOTER                  */
+
+
+textarea {
+    /* Font & Text */
+    font-family: Bitter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 22.4px;
+    text-decoration: none solid rgba(0, 0, 0, 0.8);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: top;
+    white-space: pre-wrap;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: #FFFFFF;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgba(0, 0, 0, 0.8);
+
+    /* Box */
+    height: 96px;
+    width: 878px;
+    border: 0px none rgba(0, 0, 0, 0.8);
+    border-top: 0px none rgba(0, 0, 0, 0.8);
+    border-right: 0px none rgba(0, 0, 0, 0.8);
+    border-bottom: 0px none rgba(0, 0, 0, 0.8);
+    border-left: 0px none rgba(0, 0, 0, 0.8);
+    margin: 0px;
+    padding: 16px;
+    max-height: none;
+    min-height: 96px;
+    max-width: 100%;
+    min-width: 0px;
+}
+
+.comment_footer {
+    /* Font & Text */
+    font-family: Bitter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24.5px;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-align: start;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: gainsboro;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(102, 102, 102);
+
+    /* Box */
+    height: 38.5px;
+    width: 878px;
+    padding: 16px;
+    max-height: none;
+    max-width: none;
+}
+
+.comment_footer_submit {
+    /* Font & Text */
+    font-family: Bitter, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24.5px;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    white-space: nowrap;
+    word-spacing: 0px;
+
+    /* Color & Background */
+    background-attachment: scroll;
+    background-color: gray;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    color: rgb(255, 255, 255);
+    /*margin-top: 20px;*/
+
+    /* Box */
+    height: 24.5px;
+    width: 36.0938px;
+    padding: 14px 44px;
+    max-height: none;
+    min-height: 0px;
+    max-width: none;
+    min-width: 0px;
+}
+
+.comment_footer_submit p {
+    margin-bottom: 50px;
+}
