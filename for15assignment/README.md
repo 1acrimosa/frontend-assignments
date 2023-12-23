@@ -31,4 +31,4 @@ npm run build
 About components
 
 I did several components to one with several functions. For example input or button components can run into group component.
-Also, StoryBook files in src/stories/
+Also, StoryBook files in stories/ directory
