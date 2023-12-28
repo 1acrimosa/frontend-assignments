@@ -27,7 +27,3 @@ npm run dev
 ```sh
 npm run build
 ```
-
-## Screenshots
-
-![](screen1.png)
