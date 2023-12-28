@@ -30,4 +30,6 @@ npm run build
 
 ## Screenshots
 
+(src/media/screen1.png)
+(src/media/screen2.png)
 
