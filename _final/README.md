@@ -30,4 +30,4 @@ npm run build
 
 ## Screenshots
 
-| ![](screen1.png)  | ![](screen2.png)
+![](screen2.png)
